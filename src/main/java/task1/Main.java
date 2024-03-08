@@ -6,17 +6,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        LibraryEntity book1 = new Book(1, "Азбука", "Кирилл и Мефодий");
-        LibraryEntity book2 = new Book(2, "Букварь", "Павел");
-        LibraryEntity book3 = new Book(3, "Красная Книга", "Мефодий");
+        LibraryEntity book1 = new Book(1, "Азбука", "Иванов");
+        LibraryEntity book2 = new Book(2, "Камасутра", "Петров");
+        LibraryEntity book3 = new Book(3, "Книга рекордов Гинесса", "Ганди");
 
-        LibraryEntity newspaper1 = new Newspaper(4, "Известия");
-        LibraryEntity newspaper2 = new Newspaper(5, "АиФ");
-        LibraryEntity newspaper3 = new Newspaper(6, "КМ");
+        LibraryEntity newspaper1 = new Newspaper(4, "Игромания");
+        LibraryEntity newspaper2 = new Newspaper(5, "GameExe");
+        LibraryEntity newspaper3 = new Newspaper(6, "ЛКИ");
 
-        LibraryEntity microFilm1 = new MicroFilm(7, "Природа", "Кирилл");
-        LibraryEntity microFilm2 = new MicroFilm(8, "Про китов", "Мефодий");
-        LibraryEntity microFilm3 = new MicroFilm(9, "Спорт", "Павел");
+        LibraryEntity microFilm1 = new MicroFilm(7, "В мире ботанов", "Пашка");
+        LibraryEntity microFilm2 = new MicroFilm(8, "Про задротов", "AdminCom");
+        LibraryEntity microFilm3 = new MicroFilm(9, "Лебединое озеро", "Павлуша");
 
 
         Library library1 = new LibraryMunicipal("Библиотека1", new ArrayList<>());
@@ -28,7 +28,7 @@ public class Main {
         List<LibraryEntity> searchList = search.filterList(library1,2);
         System.out.println(searchList);
 
-        List<LibraryEntity> searchList1 = search.filterList(library1,"Кирилл");
+        List<LibraryEntity> searchList1 = search.filterList(library1,"Петров");
         System.out.println(searchList1);
     }
 
